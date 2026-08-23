@@ -191,7 +191,7 @@ export default defineCachedEventHandler(
         return c as GitHubContributor & { order: number; sponsors_url: string | null; role: Role }
       })
       .sort((a, b) => a.order - b.order || b.contributions - a.contributions)
-      .map(({ order: _, ...rest }) => rest)
+      .map(({ order: _order, ...rest }) => rest)
   },
   {
     maxAge: 3600, // Cache for 1 hour
