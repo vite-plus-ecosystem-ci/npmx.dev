@@ -142,6 +142,7 @@
     "markdown-it-anchor": "9.2.1",
     "msw": "catalog:msw",
     "msw-storybook-addon": "catalog:storybook",
+    "playwright": "1.62.1",
     "rolldown": "1.2.4",
     "schema-dts": "2.0.0",
     "storybook": "catalog:storybook",
