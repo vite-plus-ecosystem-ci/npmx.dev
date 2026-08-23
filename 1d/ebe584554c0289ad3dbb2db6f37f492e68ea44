@@ -1,0 +1,29 @@
+server/api/contributors.get.ts
+  s_71a3b49c0bdf46::t_b4cafd14ef177f 194
+server/api/social/likes/[...pkg].get.ts
+  s_71a3b49c0bdf46::t_594b29b898a34d 11
+server/routes/.well-known/jwks.json.get.ts
+  s_71a3b49c0bdf46::t_22883bf0347ad9 3
+server/routes/oauth-client-metadata.json.get.ts
+  s_71a3b49c0bdf46::t_d5ca96f7a9211b 1
+test/e2e/helpers/fixtures.ts
+  s_71a3b49c0bdf46::t_cac10ef0741514 130
+uno-preset-rtl.ts
+  s_71a3b49c0bdf46::t_c87f71a871ff6a 132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1debe584554c0289ad3dbb2db6f37f492e68ea44",
+  "prompts": {},
+  "sessions": {
+    "s_71a3b49c0bdf46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d1129124-4b50-493c-a6b0-9bd30f8b1e4d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MK <fengmk2@gmail.com>"
+    }
+  }
+}
