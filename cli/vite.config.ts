@@ -6,8 +6,6 @@ export default defineConfig({
     format: 'esm',
     dts: true,
     outDir: 'dist',
-    deps: {
-      neverBundle: ['@lydell/node-pty'],
-    },
+    deps: { resolveDepSubpath: true, neverBundle: ['@lydell/node-pty'] },
   },
 })
