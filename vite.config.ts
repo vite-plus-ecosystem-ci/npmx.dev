@@ -197,8 +197,11 @@ export default defineConfig({
     '*.{js,ts,mjs,cjs,vue,json,yml,md,html,css}': 'vp fmt',
   },
   test: {
+    clearMocks: false,
+    sharedViteServer: false,
     projects: [
       {
+        extends: false,
         resolve: {
           alias: {
             '~': `${rootDir}/app`,
@@ -208,6 +211,7 @@ export default defineConfig({
           },
         },
         test: {
+          clearMocks: false,
           name: 'unit',
           include: ['test/unit/**/*.{test,spec}.ts'],
           environment: 'node',
