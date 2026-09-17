@@ -50,6 +50,7 @@ catalogs:
       version: 4.1.11
 
 overrides:
+  vue-i18n: 11.4.8
   '@types/node': 24.13.3
   nuxt-og-image: ^6.7.5
   sharp: 0.35.3
@@ -2221,7 +2222,7 @@ packages:
       petite-vue-i18n: '*'
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: 3.5.42
-      vue-i18n: '*'
+      vue-i18n: 11.4.8
     peerDependenciesMeta:
       petite-vue-i18n:
         optional: true
@@ -2245,7 +2246,7 @@ packages:
       '@intlify/shared': ^9.0.0 || ^10.0.0 || ^11.0.0
       '@vue/compiler-dom': ^3.0.0
       vue: 3.5.42
-      vue-i18n: ^9.0.0 || ^10.0.0 || ^11.0.0
+      vue-i18n: 11.4.8
     peerDependenciesMeta:
       '@intlify/shared':
         optional: true
@@ -10673,8 +10674,8 @@ packages:
     resolution: {integrity: sha512-i1NW5R58S720iQ1BEk+6ILo3hT6UA8mtYNNolSH4rt9345qvXdvA6GHy2+jHozdDAKHwlu9VvS/+vIMKs1UYQw==, tarball: https://registry.npmjs.org/vue-i18n-extract/-/vue-i18n-extract-2.0.7.tgz}
     hasBin: true
 
-  vue-i18n@11.4.12:
-    resolution: {integrity: sha512-yvArvvo3ErLKFNlQrZUGmRkxL/ctM5xFYtE9FxTKiE/PalWP1bnTopBgbSRGLluYEyYSNl1Pt8l2J7zVavbXww==, tarball: https://registry.npmjs.org/vue-i18n/-/vue-i18n-11.4.12.tgz}
+  vue-i18n@11.4.8:
+    resolution: {integrity: sha512-0ULeHP6Z9CGvAm67S77ZEp41cfGXIREGL8qfhos2BMgcQQewtQcDKuojt6jjasAD/S8GwfTp2ySPmDSpwvrCMQ==, tarball: https://registry.npmjs.org/vue-i18n/-/vue-i18n-11.4.8.tgz}
     engines: {node: '>= 22'}
     peerDependencies:
       vue: 3.5.42
@@ -12751,7 +12752,7 @@ snapshots:
     dependencies:
       '@swc/helpers': 0.5.23
 
-  '@intlify/bundle-utils@11.2.5(vue-i18n@11.4.12)':
+  '@intlify/bundle-utils@11.2.5(vue-i18n@11.4.8)':
     dependencies:
       '@intlify/message-compiler': 11.4.12
       '@intlify/shared': 11.4.8
@@ -12763,7 +12764,7 @@ snapshots:
       source-map-js: 1.2.1
       yaml-eslint-parser: 1.3.2
     optionalDependencies:
-      vue-i18n: 11.4.12(vue@3.5.42)
+      vue-i18n: 11.4.8(vue@3.5.42)
 
   '@intlify/core-base@11.4.12':
     dependencies:
@@ -12811,12 +12812,12 @@ snapshots:
 
   '@intlify/shared@11.4.8': {}
 
-  '@intlify/unplugin-vue-i18n@11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.12)(vue@3.5.42)':
+  '@intlify/unplugin-vue-i18n@11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.8)(vue@3.5.42)':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0)
-      '@intlify/bundle-utils': 11.2.5(vue-i18n@11.4.12)
+      '@intlify/bundle-utils': 11.2.5(vue-i18n@11.4.8)
       '@intlify/shared': 11.4.8
-      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.4.8)(@vue/compiler-dom@3.5.42)(vue-i18n@11.4.12)(vue@3.5.42)
+      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.4.8)(@vue/compiler-dom@3.5.42)(vue-i18n@11.4.8)(vue@3.5.42)
       '@rollup/pluginutils': 5.4.0(rollup@4.63.3)
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/typescript-estree': 8.70.0(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)
@@ -12828,7 +12829,7 @@ snapshots:
       vue: 3.5.42(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa(@types/node@24.13.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(yaml@2.9.1)'
-      vue-i18n: 11.4.12(vue@3.5.42)
+      vue-i18n: 11.4.8(vue@3.5.42)
     transitivePeerDependencies:
       - '@vue/compiler-dom'
       - eslint
@@ -12840,14 +12841,14 @@ snapshots:
 
   '@intlify/utils@0.14.1': {}
 
-  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.4.8)(@vue/compiler-dom@3.5.42)(vue-i18n@11.4.12)(vue@3.5.42)':
+  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.4.8)(@vue/compiler-dom@3.5.42)(vue-i18n@11.4.8)(vue@3.5.42)':
     dependencies:
       '@babel/parser': 7.29.8
     optionalDependencies:
       '@intlify/shared': 11.4.8
       '@vue/compiler-dom': 3.5.42
       vue: 3.5.42(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)
-      vue-i18n: 11.4.12(vue@3.5.42)
+      vue-i18n: 11.4.8(vue@3.5.42)
 
   '@ioredis/commands@1.10.0': {}
 
@@ -14274,7 +14275,7 @@ snapshots:
       '@intlify/h3': 0.7.4
       '@intlify/message-compiler': 11.4.12
       '@intlify/shared': 11.4.8
-      '@intlify/unplugin-vue-i18n': 11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.12)(vue@3.5.42)
+      '@intlify/unplugin-vue-i18n': 11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.8)(vue@3.5.42)
       '@intlify/utils': 0.14.1
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.63.3)
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.5)(oxc-parser@0.144.0)(rolldown@1.2.4)(unplugin@3.4.0)
@@ -14297,7 +14298,7 @@ snapshots:
       unplugin: 3.4.0(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(esbuild@0.28.2)(rolldown@1.2.4)(rollup@4.63.3)(webpack@5.111.0)
       unrouting: 0.2.3
       unstorage: 1.17.5(@upstash/redis@1.38.2)(db0@0.3.4)(ioredis@5.11.1)
-      vue-i18n: 11.4.12(vue@3.5.42)
+      vue-i18n: 11.4.8(vue@3.5.42)
       vue-router: 5.2.0(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-sfc@3.5.42)(esbuild@0.28.2)(rolldown@1.2.4)(rollup@4.63.3)(vue@3.5.42)(webpack@5.111.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -14345,7 +14346,7 @@ snapshots:
       '@intlify/h3': 0.7.4
       '@intlify/message-compiler': 11.4.12
       '@intlify/shared': 11.4.8
-      '@intlify/unplugin-vue-i18n': 11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.12)(vue@3.5.42)
+      '@intlify/unplugin-vue-i18n': 11.2.5(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-dom@3.5.42)(eslint@10.10.0)(rollup@4.63.3)(supports-color@10.2.2)(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)(vue-i18n@11.4.8)(vue@3.5.42)
       '@intlify/utils': 0.14.1
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.63.3)
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.5)(oxc-parser@0.144.0)(rolldown@1.2.4)(unplugin@3.4.0)
@@ -14368,7 +14369,7 @@ snapshots:
       unplugin: 3.4.0(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(esbuild@0.28.2)(rolldown@1.2.4)(rollup@4.63.3)(webpack@5.111.0)
       unrouting: 0.2.3
       unstorage: 1.17.5(@upstash/redis@1.38.2)(db0@0.4.1)(ioredis@5.11.1)
-      vue-i18n: 11.4.12(vue@3.5.42)
+      vue-i18n: 11.4.8(vue@3.5.42)
       vue-router: 5.2.0(@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa)(@vue/compiler-sfc@3.5.42)(esbuild@0.28.2)(rolldown@1.2.4)(rollup@4.63.3)(vue@3.5.42)(webpack@5.111.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -23534,11 +23535,11 @@ snapshots:
       is-valid-glob: 1.0.0
       js-yaml: 4.3.2
 
-  vue-i18n@11.4.12(vue@3.5.42):
+  vue-i18n@11.4.8(vue@3.5.42):
     dependencies:
-      '@intlify/core-base': 11.4.12
-      '@intlify/devtools-types': 11.4.12
-      '@intlify/shared': 11.4.12
+      '@intlify/core-base': 11.4.8
+      '@intlify/devtools-types': 11.4.8
+      '@intlify/shared': 11.4.8
       '@vue/devtools-api': 6.6.4
       vue: 3.5.42(typescript-native-bridge@6.0.3-bridge.13.tsgo.7.0.2)
 
