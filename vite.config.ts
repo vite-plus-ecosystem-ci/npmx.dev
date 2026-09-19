@@ -197,8 +197,20 @@ export default defineConfig({
     '*.{js,ts,mjs,cjs,vue,json,yml,md,html,css}': 'vp fmt',
   },
   test: {
+    // Vitest v4 compatibility: preserve mock call history.
+    // Remove after tests no longer rely on calls from setup or earlier tests.
+    // https://vitest.dev/guide/migration/#clearmocks-is-enabled-by-default
+    clearMocks: false,
+    // Vitest v4 compatibility: keep separate Vite servers for inline projects.
+    // Remove when plugins and config hooks can run once for shared projects.
+    // https://vitest.dev/guide/migration/#inline-projects-share-the-vite-server-by-default
+    sharedViteServer: false,
     projects: [
       {
+        // Vitest v4 compatibility: keep this inline project independent of the root config.
+        // Remove to inherit root options, including plugins and setup files.
+        // https://vitest.dev/guide/migration/#inline-projects-inherit-the-root-config-by-default
+        extends: false,
         resolve: {
           alias: {
             '~': `${rootDir}/app`,
@@ -208,6 +220,10 @@ export default defineConfig({
           },
         },
         test: {
+          // Vitest v4 compatibility: preserve mock call history.
+          // Remove after tests no longer rely on calls from setup or earlier tests.
+          // https://vitest.dev/guide/migration/#clearmocks-is-enabled-by-default
+          clearMocks: false,
           name: 'unit',
           include: ['test/unit/**/*.{test,spec}.ts'],
           environment: 'node',
