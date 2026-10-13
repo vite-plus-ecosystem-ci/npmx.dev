@@ -32,7 +32,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🧪 Run Chromatic Visual and Accessibility Tests
         uses: chromaui/action@14cfaef73576e69f95f47f60058063f46ca38719 # v18.1.0
