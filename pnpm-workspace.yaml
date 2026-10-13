@@ -29,11 +29,11 @@ catalogs:
     'storybook-i18n': '^10.1.1'
 
   vite-plus:
-    'vite': npm:@voidzero-dev/vite-plus-core@1.1.0
-    'vite-plus': 1.1.0
-    'vitest': 5.0.3
-    '@vitest/browser-playwright': 5.0.3
-    '@vitest/coverage-v8': 5.0.3
+    'vite': npm:@voidzero-dev/vite-plus-core@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3
+    'vite-plus': 0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3
+    'vitest': 5.0.4
+    '@vitest/browser-playwright': 5.0.4
+    '@vitest/coverage-v8': 5.0.4
 
 dedupePeers: true
 
@@ -49,6 +49,16 @@ minimumReleaseAgeExclude:
   - '@nuxt/schema@4.5.2'
   - '@nuxt/vite-builder@4.5.2'
   - vue-data-ui@3.26.1
+  - '@voidzero-dev/vite-plus-core@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3'
+  - vite-plus@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3
 
 minimumReleaseAgeExcludePrune: true
 
