@@ -33,7 +33,8 @@ jobs:
       - uses: voidzero-dev/setup-vp@313600b80b104eadebb9111787d37a2e83e014ca # v1.17.0
         with:
           node-version: lts/*
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
           # root only, no scripts
           run-install: |
             - args: ['--filter', '.', '--ignore-scripts']
@@ -54,7 +55,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 💪 Type check
         run: vp run test:types
@@ -72,7 +74,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🧪 Unit tests
         run: vp test --project unit --coverage --reporter=default --reporter=junit --outputFile=test-report.junit.xml
@@ -112,7 +115,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🌐 Install browser
         run: vp exec playwright install chromium-headless-shell
@@ -167,7 +171,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🏗️ Build project
         run: vp run build:test
@@ -205,7 +210,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🏗️ Build project
         run: vp run build:test
@@ -229,7 +235,8 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
 
       - name: 🧹 Check for unused code
         run: vp run knip
@@ -246,7 +253,8 @@ jobs:
       - uses: voidzero-dev/setup-vp@313600b80b104eadebb9111787d37a2e83e014ca # v1.17.0
         with:
           node-version: lts/*
-          sfw: true
+          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
+          sfw: false
           # root only, no scripts
           run-install: |
             - args: ['--filter', '.', '--ignore-scripts']
