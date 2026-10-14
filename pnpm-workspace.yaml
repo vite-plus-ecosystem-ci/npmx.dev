@@ -42,6 +42,21 @@ ignoreDepScripts: true
 ignoreWorkspaceRootCheck: true
 
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
+  - '@oxc-project/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - '@iconify-json/simple-icons@1.2.93'
   - 'nuxt@4.5.2'
   - '@nuxt/kit@4.5.2'
