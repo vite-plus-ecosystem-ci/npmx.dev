@@ -34,8 +34,7 @@ jobs:
         with:
           node-version: lts/*
           cache: true
-          # Ecosystem-ci smoke test: sfw breaks the package-manager download from the bridge registry (vite-plus#3031).
-          sfw: false
+          sfw: false # Ecosystem-ci smoke test: sfw breaks the bridge registry download (vite-plus#3031).
 
       - name: Generate Lunaria Overview
         uses: lunariajs/action@e5ab09c3c8353fa80786d8c2149873ba3978a3a7 # v0.2.0
