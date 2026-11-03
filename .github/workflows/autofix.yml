@@ -31,7 +31,7 @@ jobs:
         with:
           node-version-file: .node-version
           cache: true
-          sfw: true
+          sfw: false # Ecosystem-ci smoke test: sfw breaks the bridge registry download (vite-plus#3031)
 
       - parallel:
           - name: 🎨 Check for non-RTL/non-a11y CSS classes
