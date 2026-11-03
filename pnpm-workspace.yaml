@@ -41,7 +41,7 @@ ignoreDepScripts: true
 
 ignoreWorkspaceRootCheck: true
 
-strictPeerDependencies: true
+strictPeerDependencies: false
 
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages

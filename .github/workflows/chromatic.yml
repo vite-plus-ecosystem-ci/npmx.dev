@@ -32,7 +32,7 @@ jobs:
         with:
           node-version-file: .node-version
           cache: true
-          sfw: true
+          sfw: false # Ecosystem-ci smoke test: sfw breaks the bridge registry download (vite-plus#3031)
 
       - name: 🧪 Run Chromatic Visual and Accessibility Tests
         uses: chromaui/action@14cfaef73576e69f95f47f60058063f46ca38719 # v18.1.0
